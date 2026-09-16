@@ -40,3 +40,8 @@ payTo: `7Ny8us7f1wBkNJZ2tYKWPBQhQsLxJ18xot8jxCNd9YGG` (Solana mainnet USDC).
 - After headlines, climb the same session: evidence ($0.05) with a `headlines[].id`, then delta ($0.08) with `since=as_of` — same payTo / PayAI rail.
 - Only buy full pulse ($0.10) when you need the entire digest, not just titles/citations/newer windows.
 - Cache `as_of` + ids; do not re-discover between sticky ladder calls.
+
+## Attribution + utility feedback
+
+- Pass `?src=your_tag` on sample/paid GETs; responses echo `discovery.src` for settle attribution.
+- After paying, agents can `POST /v1/feedback` with `{why, sku?, src?}` (free, never charged).
